@@ -1,11 +1,11 @@
 window.onload = function(){
-    let download = document.getElementById('download')
-    download.onmouseover = function () {
-        download.innerHTML = "<a href='#'>V 0.1<a>"
-    }
-    download.onmouseout = function () {
-        download.innerText = "Download"
-    }
+    // let download = document.getElementById('download')
+    // download.onmouseover = function () {
+    //     download.innerHTML = "<a href='#'>V 0.1<a>"
+    // }
+    // download.onmouseout = function () {
+    //     download.innerText = "Download"
+    // }
     window.onkeydown = window.onkeyup = window.onkeypress = function (event) {  
         // 判断是否按下F12，F12键码为123  
         if (event.keyCode = 123) {  

@@ -33,6 +33,14 @@ button{
     cursor: pointer;
 }
 
+#download:after{
+	content: 'Download';
+}
+
+#download:hover::after{
+	content: 'v 0.1';
+}
+
 .content{
     color:#fbfcfd;
     position: absolute;
