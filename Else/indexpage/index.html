@@ -20,42 +20,42 @@
             <input class="searchInput" type="text" id="text" placeholder="Type for Search">
             <button class="searchButton" type="submit" id="s">
                 <i class="material-icons">
-                    go
+                    GO
                 </i>
             </button>
         </div>
+				
 
-
-        <div class="sidebar">
-
-            <div class="social-links">
-                <a href="http://be1xc.github.io/"><i class="icon iconfont icon-github1"></i></a>
-                <a href="https://gitee.com/belxc"><i class="icon iconfont icon-gitee"></i></a>
-                <a href="http://be1xc.github.io/"><i class="icon iconfont icon-blog"></i></a>
-                <!-- http://down.zerun.asia/   百度解析 -->
-            </div>
-
-        </div>
     </div>
-
+		
+		<!-- yidou/ -->
+		<div class="sidebar">
+			<img src="./img/yd.png" id="yd">
+		</div>
+		<!--  -->
+		
     <script>
+				let bing = 'https://cn.bing.com/search?q='
+				let baidu = 'https://www.baidu.com/s?wd='
         let search = document.getElementById('s')
         let text = document.getElementById('text')
         search.onclick = function () {
             if(text.value!=''){
-                window.open('https://www.baidu.com/s?wd=' + text.value)
+                window.open(baidu + text.value)
                 text.value = ''
             }   
         }
         document.onkeydown = function(){
             if(window.event.keyCode == 13){
                 if(text.value!=''){
-                window.open('https://www.baidu.com/s?wd=' + text.value)
-                text.value = ''
-            }   
+									window.open(bing + text.value)
+									text.value = ''
+								}   
             }
-       //做点击回车后的事件，回车的键值是13
-        }
+				}
+				
+				
+				
     </script>
 </body>
 
