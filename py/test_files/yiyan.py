@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 import requests
-import re
 
 def main_handler():
     headers = {
@@ -16,5 +15,5 @@ def main_handler():
         'msg': msg
     }
     requests.post(qq, data)
-
+    # print(msg)
 main_handler()
